@@ -1,20 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fira_Code, Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const firaCode = Fira_Code({
+  variable: "--font-fira-code",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Wesley Stocco | Fase 0",
-  description: "Fundacao inicial do portfolio Wesley Stocco com Next.js, Supabase e Vercel.",
+  title: "Wesley Stocco | Desenvolvedor Full-stack e IA",
+  description:
+    "Estrutura visual inicial do portfolio Wesley Stocco com Next.js, Supabase, Vercel e uma identidade imersiva em construcao.",
 };
 
 export default function RootLayout({
@@ -25,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${spaceGrotesk.variable} ${firaCode.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
         {children}

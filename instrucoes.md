@@ -1238,3 +1238,30 @@ Se pararmos aqui, o proximo passo recomendado e:
 - [x] `supabase migration new new-migration` executado com sucesso
 - [x] `supabase db push` executado com sucesso
 - [x] Estrutura local e deploy publico prontos para iniciar a Fase 1
+
+## STATUS DE EXECUCAO - FASE 1 (2026-04-08)
+
+### O que foi iniciado nesta rodada
+
+- [x] Home padrao do Next.js substituida por uma landing inicial da Fase 1
+- [x] Tipografia atualizada para `Inter`, `Space Grotesk` e `Fira Code`
+- [x] Tema global atualizado com a paleta do projeto
+- [x] `VideoBackground` implementado usando `public/videos/background.mp4`
+- [x] `SplashScreen` implementado com digitacao e saida animada
+- [x] `Navbar` glassmorphism implementada com links principais
+- [x] `Hero` implementada com status do projeto e CTA para o GitHub
+- [x] `About` implementada com cards e roadmap da fase
+- [x] `GlassCard` criado como base reutilizavel
+
+### Validacoes desta rodada
+
+- [x] `npm.cmd run lint`
+- [x] `npm.cmd run build`
+- [x] `npm.cmd run dev` respondendo `200` localmente
+- [x] Conteudo da home validado localmente com `HAS_HERO=True` e `HAS_ABOUT=True`
+
+### Proximo passo recomendado
+
+1. esperar o deploy da Vercel atualizar com a nova landing;
+2. seguir refinando a Sprint 1 com cursor customizado, glow e mais motion;
+3. depois abrir a Sprint 2 para projetos dinamicos via Supabase.
