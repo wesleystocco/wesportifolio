@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ArrowLeft, ArrowUpRight, FolderGit2 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -48,6 +49,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
 
   const paragraphs =
     project.full_description?.split(/\n\s*\n/).filter(Boolean) ?? [project.short_description];
+  const galleryImages = project.gallery_images?.filter(Boolean) ?? [];
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 px-4 pb-20 pt-28 sm:px-6 lg:px-8 lg:pt-32">
@@ -81,6 +83,23 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
           </div>
         </div>
 
+        {project.cover_image_url ? (
+          <div className="border-b border-white/8 px-6 py-6 sm:px-8">
+            <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-black/20">
+              <div className="relative aspect-[16/9]">
+                <Image
+                  src={project.cover_image_url}
+                  alt={`Capa principal do projeto ${project.title}`}
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 64rem, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        ) : null}
+
         <div className="grid gap-8 px-6 py-8 sm:px-8 lg:grid-cols-[minmax(0,1fr)_280px]">
           <div className="space-y-5 text-white/72">
             {paragraphs.map((paragraph) => (
@@ -88,6 +107,30 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                 {paragraph}
               </p>
             ))}
+
+            {galleryImages.length > 0 ? (
+              <div className="pt-4">
+                <p className="section-kicker">Galeria</p>
+                <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                  {galleryImages.map((imageUrl, index) => (
+                    <div
+                      key={imageUrl}
+                      className="relative overflow-hidden rounded-[24px] border border-white/10 bg-black/20"
+                    >
+                      <div className="relative aspect-[4/3]">
+                        <Image
+                          src={imageUrl}
+                          alt={`Preview ${index + 1} do projeto ${project.title}`}
+                          fill
+                          sizes="(min-width: 1024px) 22rem, 100vw"
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : null}
           </div>
 
           <div className="space-y-4">

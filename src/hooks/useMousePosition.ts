@@ -16,11 +16,13 @@ export function useMousePosition(): MousePositionState {
   });
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(pointer: fine)");
+    const mediaQuery = window.matchMedia("(pointer: fine) and (min-width: 768px)");
 
-    if (!mediaQuery.matches) {
-      return;
-    }
+    const resetPointer = () => {
+      setState((current) =>
+        current.isActive ? { ...current, isActive: false } : current,
+      );
+    };
 
     const handlePointerMove = (event: PointerEvent) => {
       setState({
@@ -31,15 +33,36 @@ export function useMousePosition(): MousePositionState {
     };
 
     const handlePointerLeave = () => {
-      setState((current) => ({ ...current, isActive: false }));
+      resetPointer();
     };
 
-    window.addEventListener("pointermove", handlePointerMove);
-    window.addEventListener("pointerleave", handlePointerLeave);
+    const bindPointerTracking = () => {
+      window.addEventListener("pointermove", handlePointerMove);
+      window.addEventListener("pointerleave", handlePointerLeave);
+    };
 
-    return () => {
+    const unbindPointerTracking = () => {
       window.removeEventListener("pointermove", handlePointerMove);
       window.removeEventListener("pointerleave", handlePointerLeave);
+    };
+
+    const syncTracking = () => {
+      unbindPointerTracking();
+
+      if (!mediaQuery.matches) {
+        resetPointer();
+        return;
+      }
+
+      bindPointerTracking();
+    };
+
+    syncTracking();
+    mediaQuery.addEventListener("change", syncTracking);
+
+    return () => {
+      unbindPointerTracking();
+      mediaQuery.removeEventListener("change", syncTracking);
     };
   }, []);
 

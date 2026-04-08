@@ -1,0 +1,39 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0F0B12" />
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <circle cx="1326" cy="730" r="256" fill="url(#glowA)" />
+  <circle cx="278" cy="174" r="218" fill="url(#glowB)" />
+  <rect x="104" y="104" width="1392" height="692" rx="38" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" />
+  <text x="166" y="170" fill="rgba(247,242,248,0.55)" font-family="Courier New, monospace" font-size="24" letter-spacing="6">
+    SEO AUTOMATION / AI WORKFLOW
+  </text>
+  <text x="166" y="334" fill="#F8F3F5" font-family="Arial, sans-serif" font-size="96" font-weight="700">SekkoLab IA</text>
+  <text x="168" y="410" fill="rgba(248,243,245,0.76)" font-family="Arial, sans-serif" font-size="34">
+    Ferramenta para SEO, conteudo e operacao com IA.
+  </text>
+  <rect x="166" y="486" width="540" height="200" rx="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+  <rect x="764" y="186" width="650" height="500" rx="32" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" />
+  <rect x="812" y="238" width="228" height="12" rx="6" fill="#E9DDF1" fill-opacity="0.72" />
+  <rect x="812" y="278" width="290" height="10" rx="5" fill="white" fill-opacity="0.22" />
+  <rect x="812" y="348" width="164" height="292" rx="26" fill="#8761A8" fill-opacity="0.16" />
+  <rect x="996" y="348" width="164" height="292" rx="26" fill="#D05B84" fill-opacity="0.12" />
+  <rect x="1180" y="348" width="186" height="292" rx="26" fill="rgba(255,255,255,0.07)" />
+  <text x="168" y="760" fill="rgba(248,243,245,0.62)" font-family="Courier New, monospace" font-size="22" letter-spacing="5">
+    PYTHON  FASTAPI  NEXT.JS  OPENAI API
+  </text>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1480" y2="812" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171019" />
+      <stop offset="0.5" stop-color="#211223" />
+      <stop offset="1" stop-color="#100C11" />
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1326 730) rotate(90) scale(256)">
+      <stop stop-color="#8761A8" stop-opacity="0.32" />
+      <stop offset="1" stop-color="#8761A8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(278 174) rotate(90) scale(218)">
+      <stop stop-color="#D05B84" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#D05B84" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+</svg>

@@ -2,6 +2,7 @@
 
 import Tilt from "react-parallax-tilt";
 import { ArrowUpRight, FolderGit2 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -40,6 +41,17 @@ export function ProjectCard({ project }: ProjectCardProps) {
               coverClassName,
             )}
           >
+            {project.cover_image_url ? (
+              <Image
+                src={project.cover_image_url}
+                alt={`Capa do projeto ${project.title}`}
+                fill
+                sizes="(min-width: 1024px) 32rem, 100vw"
+                className="object-cover opacity-72"
+              />
+            ) : null}
+
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,4,5,0.14),rgba(8,4,5,0.72))]" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_30%)]" />
             <div className="relative flex min-h-44 flex-col justify-between">
               <div className="section-kicker">Projeto em destaque</div>

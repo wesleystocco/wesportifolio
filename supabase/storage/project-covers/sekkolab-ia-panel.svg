@@ -1,0 +1,26 @@
+<svg width="1400" height="1050" viewBox="0 0 1400 1050" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="1050" fill="#120D14" />
+  <rect width="1400" height="1050" fill="url(#bg)" />
+  <circle cx="1186" cy="162" r="168" fill="url(#glow)" />
+  <rect x="118" y="118" width="1164" height="814" rx="34" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" />
+  <text x="170" y="224" fill="rgba(247,242,248,0.55)" font-family="Courier New, monospace" font-size="24" letter-spacing="5">
+    SEARCH INTELLIGENCE / OPERATION VIEW
+  </text>
+  <text x="170" y="340" fill="#F8F3F5" font-family="Arial, sans-serif" font-size="72" font-weight="700">Conteudo, dados e automacao</text>
+  <rect x="170" y="410" width="1060" height="340" rx="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+  <rect x="220" y="462" width="282" height="236" rx="24" fill="#8761A8" fill-opacity="0.14" />
+  <rect x="536" y="462" width="282" height="236" rx="24" fill="#D05B84" fill-opacity="0.12" />
+  <rect x="852" y="462" width="326" height="236" rx="24" fill="rgba(255,255,255,0.05)" />
+  <rect x="220" y="798" width="468" height="12" rx="6" fill="#E9DDF1" fill-opacity="0.72" />
+  <rect x="220" y="842" width="710" height="10" rx="5" fill="white" fill-opacity="0.22" />
+  <defs>
+    <linearGradient id="bg" x1="84" y1="80" x2="1312" y2="982" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A131C" />
+      <stop offset="1" stop-color="#120D14" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1186 162) rotate(90) scale(168)">
+      <stop stop-color="#8761A8" stop-opacity="0.38" />
+      <stop offset="1" stop-color="#8761A8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="1400" height="1050" viewBox="0 0 1400 1050" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="1050" fill="#110C0D" />
+  <rect width="1400" height="1050" fill="url(#bg)" />
+  <circle cx="180" cy="178" r="160" fill="url(#pulse)" />
+  <rect x="118" y="116" width="1164" height="818" rx="34" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" />
+  <text x="170" y="228" fill="rgba(248,243,245,0.55)" font-family="Courier New, monospace" font-size="24" letter-spacing="5">
+    USER FLOW / PLATFORM SNAPSHOT
+  </text>
+  <text x="170" y="350" fill="#F8F3F5" font-family="Arial, sans-serif" font-size="74" font-weight="700">Ritmo de estudo + IA</text>
+  <rect x="170" y="420" width="1060" height="312" rx="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+  <rect x="220" y="470" width="230" height="212" rx="24" fill="#D05B84" fill-opacity="0.14" />
+  <rect x="486" y="470" width="230" height="212" rx="24" fill="#E7AAC0" fill-opacity="0.12" />
+  <rect x="752" y="470" width="430" height="212" rx="24" fill="rgba(255,255,255,0.05)" />
+  <rect x="220" y="788" width="420" height="12" rx="6" fill="#F2D7E1" fill-opacity="0.7" />
+  <rect x="220" y="832" width="678" height="10" rx="5" fill="white" fill-opacity="0.24" />
+  <defs>
+    <linearGradient id="bg" x1="70" y1="72" x2="1312" y2="968" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1012" />
+      <stop offset="1" stop-color="#140E10" />
+    </linearGradient>
+    <radialGradient id="pulse" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 178) rotate(90) scale(160)">
+      <stop stop-color="#D05B84" stop-opacity="0.36" />
+      <stop offset="1" stop-color="#D05B84" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+</svg>

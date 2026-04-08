@@ -33,7 +33,7 @@ export function CustomCursor() {
     <>
       <motion.div
         aria-hidden="true"
-        className="pointer-events-none fixed left-0 top-0 z-[60] hidden h-11 w-11 rounded-full border border-[#dca0b6]/38 bg-[#d05b84]/8 mix-blend-screen md:block"
+        className="pointer-events-none fixed left-0 top-0 z-[60] h-11 w-11 rounded-full border border-[#dca0b6]/38 bg-[#d05b84]/8 mix-blend-screen"
         style={{
           x: outerX,
           y: outerY,
@@ -44,7 +44,7 @@ export function CustomCursor() {
       />
       <motion.div
         aria-hidden="true"
-        className="pointer-events-none fixed left-0 top-0 z-[61] hidden h-2.5 w-2.5 rounded-full bg-[#f2c2d1] md:block"
+        className="pointer-events-none fixed left-0 top-0 z-[61] h-2.5 w-2.5 rounded-full bg-[#f2c2d1]"
         style={{
           x: innerX,
           y: innerY,
