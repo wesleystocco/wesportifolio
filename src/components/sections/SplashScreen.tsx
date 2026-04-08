@@ -6,15 +6,28 @@ import { useEffect, useMemo, useState } from "react";
 const fullText = "> Iniciando Wesley_Stocco.exe...";
 
 export function SplashScreen() {
-  const [showSplash, setShowSplash] = useState(
-    () => typeof window !== "undefined" && sessionStorage.getItem("splash-shown") !== "true",
-  );
+  const [showSplash, setShowSplash] = useState(false);
   const [typedText, setTypedText] = useState("");
 
   const hasTypedEverything = useMemo(
     () => typedText.length >= fullText.length,
     [typedText.length],
   );
+
+  useEffect(() => {
+    if (window.sessionStorage.getItem("splash-shown") === "true") {
+      return;
+    }
+
+    const showTimeout = window.setTimeout(() => {
+      setTypedText("");
+      setShowSplash(true);
+    }, 0);
+
+    return () => {
+      window.clearTimeout(showTimeout);
+    };
+  }, []);
 
   useEffect(() => {
     if (!showSplash) {
