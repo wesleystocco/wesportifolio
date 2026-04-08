@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wesportifolio
 
-## Getting Started
+Base inicial do portfolio de Wesley Stocco em Next.js, com preparacao para Supabase e deploy na Vercel.
 
-First, run the development server:
+## Fase 0
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Status atual:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- estrutura Next.js criada com App Router, TypeScript e Tailwind CSS
+- dependencias iniciais instaladas
+- clientes base do Supabase preparados
+- script SQL inicial disponivel em `supabase/schema.sql`
+- deploy local validado com `npm.cmd run dev`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Rodando localmente
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Preencha o arquivo `.env.local`
+2. Instale dependencias com `npm.cmd install`
+3. Rode `npm.cmd run dev`
+4. Acesse `http://localhost:3000`
 
-## Learn More
+## Arquivos importantes
 
-To learn more about Next.js, take a look at the following resources:
+- `instrucoes.md`: documentacao principal do projeto
+- `supabase/schema.sql`: criacao das tabelas iniciais
+- `src/lib/supabase/`: utilitarios de conexao
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Proximos passos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- criar projeto no Supabase
+- preencher variaveis de ambiente
+- executar o SQL inicial
+- conectar GitHub + Vercel
