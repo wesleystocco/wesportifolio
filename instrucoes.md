@@ -1194,13 +1194,14 @@ CV PDF:   Colocar em /public/cv-wesley-stocco.pdf
 - [x] Utilitarios iniciais do Supabase preparados em `src/lib/supabase/`
 - [x] Script SQL extraido para `supabase/schema.sql`
 - [x] Repositorio Git local inicializado
+- [x] Repositorio remoto conectado e push realizado para `https://github.com/wesleystocco/wesportifolio.git`
 
 ### Pendencias para fechar a Fase 0
 
 - [ ] Criar o projeto `wesley-portfolio` no Supabase
 - [ ] Copiar a `NEXT_PUBLIC_SUPABASE_URL` e a `NEXT_PUBLIC_SUPABASE_ANON_KEY` para `.env.local`
 - [ ] Executar o SQL de `supabase/schema.sql` no SQL Editor do Supabase
-- [ ] Criar o repositorio remoto no GitHub e enviar o primeiro push
+- [x] Criar o repositorio remoto no GitHub e enviar o primeiro push
 - [ ] Importar o repositorio na Vercel e cadastrar as mesmas variaveis de ambiente
 - [ ] Confirmar a URL publica funcionando
 
@@ -1217,4 +1218,5 @@ Se pararmos aqui, o proximo passo recomendado e:
 1. criar o projeto no Supabase;
 2. preencher `.env.local`;
 3. rodar o SQL de `supabase/schema.sql`;
-4. validar localmente com `npm.cmd run dev`.
+4. importar o repositório na Vercel e cadastrar as env vars;
+5. validar localmente com `npm.cmd run dev`.
