@@ -1,6 +1,7 @@
 import { ArrowDownRight, FolderGit2, Layers3, RadioTower, Sparkles } from "lucide-react";
 
 import { GlassCard } from "@/components/ui/GlassCard";
+import { GlowButton } from "@/components/ui/GlowButton";
 
 const statusItems = [
   { label: "Local", value: "Online" },
@@ -32,22 +33,21 @@ export function Hero() {
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <a
+          <GlowButton
             href="#sobre"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-[#bf246d] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#d6367f] hover:shadow-[0_0_28px_rgba(191,36,109,0.38)]"
+            icon={ArrowDownRight}
           >
             Explorar estrutura
-            <ArrowDownRight className="h-4 w-4" />
-          </a>
-          <a
+          </GlowButton>
+          <GlowButton
             href="https://github.com/wesleystocco/wesportifolio"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-white/12 bg-white/6 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/10"
+            variant="ghost"
+            icon={FolderGit2}
           >
             Ver no GitHub
-            <FolderGit2 className="h-4 w-4" />
-          </a>
+          </GlowButton>
         </div>
 
         <div className="mt-10 grid gap-3 sm:grid-cols-3">

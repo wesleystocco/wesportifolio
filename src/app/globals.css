@@ -42,6 +42,11 @@ button {
   cursor: pointer;
 }
 
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none !important;
+}
+
 .font-display {
   font-family: var(--font-space-grotesk), Arial, Helvetica, sans-serif;
 }
@@ -74,4 +79,11 @@ button {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+@media (pointer: coarse) {
+  .has-custom-cursor,
+  .has-custom-cursor * {
+    cursor: auto !important;
+  }
 }

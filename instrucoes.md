@@ -1252,6 +1252,8 @@ Se pararmos aqui, o proximo passo recomendado e:
 - [x] `Hero` implementada com status do projeto e CTA para o GitHub
 - [x] `About` implementada com cards e roadmap da fase
 - [x] `GlassCard` criado como base reutilizavel
+- [x] `GlowButton` criado e integrado aos CTAs principais
+- [x] `CustomCursor` criado com `useMousePosition` para desktop
 
 ### Validacoes desta rodada
 
