@@ -1195,11 +1195,12 @@ CV PDF:   Colocar em /public/cv-wesley-stocco.pdf
 - [x] Script SQL extraido para `supabase/schema.sql`
 - [x] Repositorio Git local inicializado
 - [x] Repositorio remoto conectado e push realizado para `https://github.com/wesleystocco/wesportifolio.git`
+- [x] Projeto do Supabase criado e configurado localmente com URL + publishable key
 
 ### Pendencias para fechar a Fase 0
 
-- [ ] Criar o projeto `wesley-portfolio` no Supabase
-- [ ] Copiar a `NEXT_PUBLIC_SUPABASE_URL` e a `NEXT_PUBLIC_SUPABASE_ANON_KEY` para `.env.local`
+- [x] Criar o projeto `wesley-portfolio` no Supabase
+- [x] Copiar a `NEXT_PUBLIC_SUPABASE_URL` e a chave publica do Supabase para `.env.local`
 - [ ] Executar o SQL de `supabase/schema.sql` no SQL Editor do Supabase
 - [x] Criar o repositorio remoto no GitHub e enviar o primeiro push
 - [ ] Importar o repositorio na Vercel e cadastrar as mesmas variaveis de ambiente
@@ -1220,3 +1221,11 @@ Se pararmos aqui, o proximo passo recomendado e:
 3. rodar o SQL de `supabase/schema.sql`;
 4. importar o repositório na Vercel e cadastrar as env vars;
 5. validar localmente com `npm.cmd run dev`.
+
+### Atualizacao complementar - deploy publico confirmado
+
+- [x] URL publica validada em `https://wesportifolio.vercel.app`
+- [x] Resposta HTTP `200` confirmada na homepage publicada
+- [x] Metadata publicada confirmada com o titulo `Wesley Stocco | Fase 0`
+- [ ] SQL do Supabase ainda precisa ser executado manualmente em `supabase/schema.sql`
+- [ ] Conferir no painel da Vercel se `NEXT_PUBLIC_SUPABASE_URL` e `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` foram cadastradas em `Settings > Environment Variables`
