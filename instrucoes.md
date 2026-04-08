@@ -1254,6 +1254,8 @@ Se pararmos aqui, o proximo passo recomendado e:
 - [x] `GlassCard` criado como base reutilizavel
 - [x] `GlowButton` criado e integrado aos CTAs principais
 - [x] `CustomCursor` criado com `useMousePosition` para desktop
+- [x] Conteudo da home refinado para soar como portfolio, e nao como pagina de status interno
+- [x] Paleta visual suavizada para reduzir excesso de saturacao no magenta
 
 ### Validacoes desta rodada
 
@@ -1264,6 +1266,6 @@ Se pararmos aqui, o proximo passo recomendado e:
 
 ### Proximo passo recomendado
 
-1. esperar o deploy da Vercel atualizar com a nova landing;
-2. seguir refinando a Sprint 1 com cursor customizado, glow e mais motion;
-3. depois abrir a Sprint 2 para projetos dinamicos via Supabase.
+1. esperar o deploy da Vercel atualizar com a nova landing refinada;
+2. considerar a Sprint 1 funcionalmente concluida;
+3. abrir a Sprint 2 para projetos dinamicos via Supabase.

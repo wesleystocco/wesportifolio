@@ -2,14 +2,14 @@
 
 :root {
   --background: #0d0809;
-  --foreground: rgba(245, 240, 240, 0.92);
-  --muted: rgba(245, 240, 240, 0.68);
-  --glass: rgba(89, 11, 25, 0.16);
-  --glass-border: rgba(255, 255, 255, 0.12);
-  --card-shadow: 0 18px 65px rgba(0, 0, 0, 0.35);
-  --accent: #bf246d;
-  --accent-strong: #a6122d;
-  --accent-soft: #a61b4e;
+  --foreground: rgba(247, 242, 242, 0.92);
+  --muted: rgba(247, 242, 242, 0.66);
+  --glass: rgba(58, 17, 24, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --card-shadow: 0 20px 70px rgba(0, 0, 0, 0.34);
+  --accent: #d05b84;
+  --accent-strong: #8f1f3f;
+  --accent-soft: #924062;
 }
 
 @theme inline {
@@ -28,13 +28,13 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
   background-image:
-    radial-gradient(circle at top, rgba(191, 36, 109, 0.2), transparent 28%),
-    radial-gradient(circle at 20% 80%, rgba(166, 18, 45, 0.24), transparent 30%),
+    radial-gradient(circle at top, rgba(208, 91, 132, 0.12), transparent 28%),
+    radial-gradient(circle at 20% 80%, rgba(143, 31, 63, 0.16), transparent 30%),
     linear-gradient(160deg, rgba(13, 8, 9, 0.98), rgba(13, 8, 9, 1));
 }
 
 body::selection {
-  background: rgba(191, 36, 109, 0.35);
+  background: rgba(208, 91, 132, 0.28);
 }
 
 a,
@@ -75,7 +75,7 @@ button {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #f8f2f2 0%, #f76ea7 50%, #bf246d 100%);
+  background: linear-gradient(135deg, #fcf8f8 0%, #e7aac0 48%, #d05b84 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

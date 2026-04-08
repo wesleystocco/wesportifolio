@@ -27,22 +27,24 @@ const cards = [
 ];
 
 const journey = [
-  "Fundacao tecnica concluida com Next.js, Supabase, GitHub e Vercel.",
-  "Casca visual entrando no ar com video, glassmorphism e primeira narrativa.",
-  "Proxima etapa: sections completas, motion refinado e projetos dinamicos.",
+  "Hoje / Portfolio, produtos com IA e aprofundamento em frontend, backend e experiencia digital.",
+  "Amadotec / Ensino de programacao e robotica educacional com foco em clareza e construcao de repertorio.",
+  "HSVP / Endomarketing, comunicacao interna e conteudo com sensibilidade visual.",
+  "ADS / Formacao em Analise e Desenvolvimento de Sistemas em andamento.",
 ];
 
 export function About() {
   return (
     <section id="sobre" className="pb-10">
       <div className="mb-8 max-w-3xl">
-        <p className="section-kicker">Sobre a base</p>
+        <p className="section-kicker">Perfil e repertorio</p>
         <h2 className="font-display mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-          O portfolio ja tem atmosfera, estrutura e direcao.
+          Um portfolio melhor quando a narrativa combina com o trabalho.
         </h2>
         <p className="mt-4 text-base leading-8 text-white/68 sm:text-lg">
-          Esta primeira camada visual mistura repertorio tecnico, narrativa de produto
-          e uma estetica mais cinematografica para fugir do layout generico.
+          A proposta aqui e apresentar Wesley com mais contexto: base tecnica,
+          experiencia em comunicacao, vivencia com ensino e interesse real em
+          produtos digitais com interface e identidade.
         </p>
       </div>
 
@@ -53,7 +55,7 @@ export function About() {
 
             return (
               <GlassCard key={card.title} className="rounded-[28px] p-5">
-                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#bf246d]/14 text-[#ff9dc4]">
+                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#d05b84]/12 text-[#f0c4d4]">
                   <Icon className="h-5 w-5" />
                 </div>
                 <p className="mt-5 text-xs uppercase tracking-[0.22em] text-white/40">
@@ -73,13 +75,13 @@ export function About() {
         <GlassCard className="rounded-[32px] p-6 sm:p-7">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="section-kicker">Roadmap vivo</p>
+              <p className="section-kicker">Trajetoria</p>
               <h3 className="font-display mt-4 text-3xl font-semibold text-white">
-                Jornada do build
+                Caminho profissional
               </h3>
             </div>
             <div className="rounded-full border border-white/10 bg-white/7 px-3 py-1 text-xs uppercase tracking-[0.18em] text-white/56">
-              Fase 1
+              Em andamento
             </div>
           </div>
 
@@ -105,9 +107,9 @@ export function About() {
             href="https://wesportifolio.vercel.app"
             target="_blank"
             rel="noreferrer"
-            className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[#ff9dc4] transition hover:text-white"
+            className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[#f0c4d4] transition hover:text-white"
           >
-            Abrir deploy atual
+            Abrir versao publicada
             <MoveRight className="h-4 w-4" />
           </a>
         </GlassCard>

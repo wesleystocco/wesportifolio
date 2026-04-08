@@ -4,8 +4,8 @@ import { GlassCard } from "@/components/ui/GlassCard";
 
 const links = [
   { href: "#home", label: "Inicio" },
-  { href: "#sobre", label: "Sobre" },
-  { href: "#fase-1", label: "Fase 1" },
+  { href: "#sobre", label: "Perfil" },
+  { href: "#trajetoria", label: "Trajetoria" },
 ];
 
 export function Navbar() {
@@ -15,7 +15,7 @@ export function Navbar() {
         <div className="flex items-center justify-between gap-4">
           <a href="#home" className="min-w-0">
             <div className="text-[11px] font-medium uppercase tracking-[0.32em] text-white/45">
-              Wesley.IA
+              Portfolio
             </div>
             <div className="truncate font-display text-sm font-semibold text-white sm:text-base">
               Wesley Stocco
@@ -38,10 +38,10 @@ export function Navbar() {
             href="https://github.com/wesleystocco/wesportifolio"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/7 px-4 py-2 text-sm font-medium text-white transition hover:border-[#bf246d]/40 hover:bg-[#bf246d]/14"
+            className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/7 px-4 py-2 text-sm font-medium text-white transition hover:border-[#d05b84]/36 hover:bg-[#d05b84]/10"
           >
-            <Sparkles className="h-4 w-4 text-[#f76ea7]" />
-            <span className="hidden sm:inline">Acompanhar build</span>
+            <Sparkles className="h-4 w-4 text-[#e3adc1]" />
+            <span className="hidden sm:inline">Abrir GitHub</span>
             <span className="sm:hidden">GitHub</span>
             <ArrowUpRight className="h-4 w-4" />
           </a>
