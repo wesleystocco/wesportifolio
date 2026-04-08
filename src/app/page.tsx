@@ -2,7 +2,10 @@ import { VideoBackground } from "@/components/background/VideoBackground";
 import { Navbar } from "@/components/layout/Navbar";
 import { About } from "@/components/sections/About";
 import { Hero } from "@/components/sections/Hero";
+import { Projects } from "@/components/sections/Projects";
 import { SplashScreen } from "@/components/sections/SplashScreen";
+
+export const revalidate = 3600;
 
 export default function Home() {
   return (
@@ -14,6 +17,7 @@ export default function Home() {
         <main className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 pb-24 pt-28 sm:px-6 lg:px-8 lg:pt-32">
           <Hero />
           <About />
+          <Projects />
         </main>
       </div>
     </>

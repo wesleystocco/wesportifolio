@@ -1269,3 +1269,31 @@ Se pararmos aqui, o proximo passo recomendado e:
 1. esperar o deploy da Vercel atualizar com a nova landing refinada;
 2. considerar a Sprint 1 funcionalmente concluida;
 3. abrir a Sprint 2 para projetos dinamicos via Supabase.
+
+## STATUS DE EXECUCAO - FASE 2 (2026-04-08)
+
+### O que foi iniciado nesta rodada
+
+- [x] Cliente publico do Supabase criado para leitura de projetos
+- [x] Tipagem `Project` criada em `src/types/index.ts`
+- [x] Funcoes `fetchProjects()` e `fetchProjectBySlug()` criadas
+- [x] Secao `Projects` integrada na home
+- [x] `ProjectCard` criado com tilt 3D
+- [x] `TagFilter` criado com filtro dinamico por tecnologia
+- [x] Rota dinamica `src/app/projetos/[slug]/page.tsx` criada
+- [x] Seed inicial de projetos criada em migration do Supabase
+- [x] Projetos `FluencyOS` e `SekkoLab IA` publicados no banco remoto
+
+### Validacoes desta rodada
+
+- [x] `supabase db push`
+- [x] `npm.cmd run lint`
+- [x] `npm.cmd run build`
+- [x] Home local respondendo com secao de projetos
+- [x] Rota local `/projetos/fluencyos` respondendo `200`
+
+### Proximo passo recomendado
+
+1. esperar a Vercel atualizar a secao de projetos publicada;
+2. decidir se a proxima rodada vai para imagens/storage ou para contato/IA;
+3. manter novas entradas do portfolio pelo fluxo de migrations ou painel do Supabase.
